@@ -1,0 +1,34 @@
+# Your code below: 
+
+#Start by turning this list of customer first names into a list called first_names
+first_names = ["Ainsley", "Ben", "Chani", "Depak"]
+
+#Create a list called preferred_size.
+preferred_size = ["Small", "Large", "Medium"]
+
+#Depak’s size is "Medium". Use .append() to add "Medium" to the preferred_size list.
+preferred_size.append("Medium")
+
+print(preferred_size)
+
+#Create a two-dimensional list called customer_data
+customer_data = [["Ainsley", "Small", True], ["Ben", "Large", False], ["Chani", "Medium", True], ["Depak", "Medium", False]]
+
+print(customer_data)
+
+#Change the data value for "Chani"‘s shipping preference to False
+customer_data [2][2] = False
+
+print(customer_data)
+
+#"Ben" reached out to Maria asking to remove his shipping option.Use the .remove() method to delete the shipping value from the sublist that contains ben’s data.
+customer_data[1].remove(False)
+
+print(customer_data)
+
+#Maria received new customers, "Amit" and "Karim". Create a new variable customer_data_final. Combine our existing list customer_data with our new customer 2d list using + by adding it to the end of customer_data.
+
+customer_data_final = customer_data + [["Amit", "Large", True], ["Karim","X-Large", False ]]
+
+print(customer_data_final)
+
