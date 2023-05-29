@@ -1,0 +1,17 @@
+# Your code below:
+
+single_digits = range(0,10)
+squares = []
+
+for sg in single_digits:
+  #print(sg)
+  squares.append(sg**2)
+
+print(squares)
+
+square = [sr * squares for sr in single_digits]
+
+cubes = [sr1 ** 3 for sr1 in single_digits]
+print(cubes)
+
+  
