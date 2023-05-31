@@ -1,0 +1,31 @@
+hairstyles = ["bouffant", "pixie", "dreadlocks", "crew", "bowl", "bob", "mohawk", "flattop"]
+
+prices = [30, 25, 40, 20, 20, 35, 50, 35]
+
+last_week = [2, 3, 5, 8, 4, 4, 6, 2]
+
+total_price = 0
+
+for cost in prices:
+  total_price += cost
+  #print(total_price) 
+
+#alocar qts itens tem dentro de prices
+pr = len(prices)
+#print(pr)
+
+#ver a média de preços
+average_price = (total_price / pr)
+#print(average_price)
+
+
+
+for new_prices in prices:
+  new_prices -= 5
+  #print(new_prices)
+
+total_revenue = 0
+
+for i in range(0,len(hairstyles)):
+  total_revenue += prices[i] * last_week[i]
+  print(total_revenue)
