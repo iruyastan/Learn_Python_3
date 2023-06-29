@@ -1,0 +1,23 @@
+current_budget = 3500.75
+
+#aqui esta apenas definindo uma funcao
+def print_remaining_budget(budget):
+  print("Your remaining budget is: $" + str(budget))
+
+#aqui estamos usando uma variavel como argumento de uma funcao que esta sendo chamada
+print_remaining_budget(current_budget)
+
+# Write your code below: 
+
+#aqui definimos mais uma funcao, porem usamos o return pois queremos modificar ou usar os parametros
+def deduct_expense(budget, expense):
+  return(budget - expense)
+
+#definimos mais uma variavel (fora do escopo de funcao)
+shirt_expense = 9
+
+#aqui atribuimos a uma variavel uma funcao sendo chamada, inserimos os argumentos em forma de variaveis para os parametros definidos inicialmente
+new_budget_after_shirt = deduct_expense(current_budget, shirt_expense)
+
+#aqui chamamos a funcao e o resultado da variavel (que eh o resultado da funcao) eh utilizado como argumento da funcao
+print_remaining_budget(new_budget_after_shirt)
