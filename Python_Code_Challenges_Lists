@@ -53,4 +53,38 @@ def larger_list(my_list1, my_list2):
 #4. More Than N
 
 
+#Write your function here
 
+
+def more_than_n(my_list, item, n):
+  if my_list.count(item) > n:
+    return True
+  else:
+    return False
+
+#Uncomment the line below when your function is done
+print(more_than_n([2, 4, 6, 2, 3, 2, 1, 2], 2, 3))
+
+
+#5. Combine Sort
+
+#minha versao == modificando a lista original
+
+#Write your function here
+
+def combine_sort(my_list1, my_list2):
+  new = (my_list1 + my_list2)
+  new.sort()
+  return new
+
+
+#Uncomment the line below when your function is done
+print(combine_sort([4, 10, 2, 5], [-10, 2, 5, 10]))
+
+
+#versao codecamy, pra nao modificar a original e trazer uma nova lista
+
+def combine_sort(my_list1, my_list2):
+  unsorted = my_list1 + my_list2
+  sortedList = sorted(unsorted)
+  return sortedList
